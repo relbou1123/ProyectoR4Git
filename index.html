@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Tasques</title>
+  <link rel="stylesheet" href="./estilo.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+</head>
+<body>
+
+
+  <div class="container">
+    <h1>Aplicació - Gestor de Tasques</h1>
+  
+    <!-- Formulari per afegir una tasca -->
+    <h2>Afegir Tasques</h2>
+    <br>
+    <label for="taskInput">Títol</label>
+    <input type="text" id="taskInput" placeholder="Títol de la tasca" required>
+    
+    <label for="taskDescriptionInput">Descripció</label>
+    <input type="text" id="taskDescriptionInput" placeholder="Descripció de la tasca" required>
+    
+    <button id="addTaskBtn">Afegeix Tasca</button>
+    <br><br>
+  
+    <!-- Llista de tasques -->
+    <h2>Llista de Tasques</h2>
+    <ul id="taskList"></ul>
+    <br><br>
+    
+    <!-- Llista de tasques eliminades -->
+    <h2>Tasques Eliminades</h2>
+    <ul id="deletedTasks"></ul>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
